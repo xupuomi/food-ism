@@ -4,10 +4,306 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <script src="https://kit.fontawesome.com/a272728d1c.js" crossorigin="anonymous"></script>
+        <title>food-ism</title>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+
+    <header id="header">
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="nav-title">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                    food-ism
+                </div>
+                <ul class="nav-menu">
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#carousel">featured</a></li>
+                <li><a href="#favs">my favs</a></li>
+                <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Example Sections -->
+    <section id="home"> 
+        <div class="home-content">
+            <h1 class="fade-in-animation">welcome to uiuc, foodie!</h1>
+            <p class="slide-up-animation">a collection of the best food on campus &lt 3</p>
+        </div>
+    </section>
+    <section id="about">
+      <div class="about-text">
+        <i class="fa-solid fa-heart fa-beat" style="color: #13294b;"></i>
+        <h1>about me</h1>
+        <ul class="about">
+        <li>hello! i'm naomi, a junior at uiuc who loves to eat yummy food </li>
+        <li>on this website, i'll document my fav uiuc restaurants and my go-to orders at each place</li>
+        </ul>
+      </div>
+      <div class="about-text">
+        <i class="fa-solid fa-heart fa-beat" style="color: #13294b;"></i>
+        <h1>history</h1>
+        <ul class="about">
+        <li> i've always loved eating from a young age! </li>
+        <li> there's nothing more comforting and energizing as a delicious meal to me</li>
+        </ul>
+      </div>
+      <div class="about-text">
+        <i class="fa-solid fa-heart fa-beat" style="color: #13294b;"></i>
+        <h1>my tastes</h1>
+        <ul class="about">
+        <li>my fav cuisines are chinese, korean, and mediterranean </li>
+        <li>i love love soup noodles, anything spicy, and sweet treats</li>
+        <li>my weakness is a good deal</li>
+        </ul>
+      </div>
+    </section>
+    <section id="carousel">
+  <h1>featured eats</h1>
+  <div class="carousel" aria-label="Featured Food Carousel">
+    <div class="carousel__viewport">
+
+      <div class="carousel__slide">
+        <img src="/./assets/northern.jpg" alt="northern cuisine">
+        <p> northern cuisine </p>
+      </div>
+  
+      <div class="carousel__slide">
+        <img src="/./assets/kyo.avif" alt="kyo matcha">
+        <p> kyo matcha </p>
+      </div>
+
+      <div class="carousel__slide">
+        <img src="/./assets/shaw.jpg" alt="shawarma joint">
+        <p> shawarma joint </p>
+      </div>
+    </div>
+
+    <div class="carousel__dots">
+      <span class="carousel__dot active"></span>
+      <span class="carousel__dot"></span>
+      <span class="carousel__dot"></span>
+    </div>
+
+    <div class="carousel__navigation">
+      <button class="carousel__prev" aria-label="Previous">&#10094;</button>
+      <button class="carousel__next" aria-label="Next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+  <section id="favs">
+  <h1>fav restaurants</h1>
+  <div class="favs-grid">
+    
+    <div class="fav-card" data-modal="modal1">
+      <img src="./assets/northern.jpg" alt="northern cuisine">
+      <div class="card-info">
+        <h2>northern cuisine</h2>
+      </div>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/northern.jpg" alt="northern cuisine">
+        <h2>northern cuisine</h2>
+        <p><strong>ranking:</strong> 4.8/5</p>
+        <p><strong>price:</strong> $$$</p>
+        <p><strong>recommendations:</strong> mapo tofu, sweet eggplant, pork intestines</p>
+        <p> <strong>desc:</strong>  very yummy & authentic, but pricy. good for big groups & family style! i go whenever i want to spoil myself</p>
+      </div>
+    </div>
+   
+    <div class="fav-card" data-modal="modal2">
+      <img src="./assets/kyo.avif" alt="kyo matcha">
+      <div class="card-info">
+        <h2>kyo matcha</h2>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/kyo.avif" alt="kyo matcha">
+        <h2>kyo matcha</h2>
+        <p><strong>ranking:</strong> 4.5/5</p>
+        <p><strong>price:</strong> $$$</p>
+        <p><strong>recommendations:</strong> matcha brulee cream slush</p>
+        <p> <strong>desc:</strong> very yummy, but pricy. i always get the same drink because it's so yummy!</p>
+      </div>
+    </div>
+
+    <div class="fav-card" data-modal="modal3">
+      <img src="./assets/shaw.jpg" alt="shawarma joint">
+      <div class="card-info">
+        <h2>shawarma joint</h2>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/shaw.jpg" alt="shawarma joint">
+        <h2>shawarma joint</h2>
+        <p><strong>ranking:</strong> 4.8/5</p>
+        <p><strong>price:</strong> $</p>
+        <p><strong>recommendations:</strong> chicken shawarma bowl with chickpea salad & cauliflower & jerusalem salad</p>
+        <p> <strong>desc:</strong> a bowl by itself isn't super cheap, but you can eat it for 3 meals and its super yummy. it also comes with free pita & sauce. also i heard the lunch deal is really good w/ free fries & a drink</p>
+      </div>
+    </div>
+
+    <div class="fav-card" data-modal="modal4">
+      <img src="./assets/midsummer.jpg" alt="midsummer lounge">
+      <div class="card-info">
+        <h2>midsummer lounge</h2>
+      </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/midsummer.jpg" alt="midsummer lounge">
+        <h2>midsummer lounge</h2>
+        <p><strong>ranking:</strong> 4.5/5</p>
+        <p><strong>price:</strong> $$$</p>
+        <p><strong>recommendations:</strong> A8 stewed beef consomme noodle </p>
+        <p> <strong>desc:</strong> on the expensive side, but it's pretty good for when you're craving a soup noodle! i (big soup noodle lover) look for chewiness of noodle & depth of soup flavor, and this dish has both!</p>
+      </div>
+    </div>
+
+    <div class="fav-card" data-modal="modal5">
+      <img src="./assets/malatang.png" alt="zhangliang malatang">
+      <div class="card-info">
+        <h2>zhangliang malatang</h2>
+      </div>
+    </div>
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/malatang.png" alt="zhangliang malatang">
+        <h2>zhangliang malatang</h2>
+        <p><strong>ranking:</strong> 4.3/5</p>
+        <p><strong>price:</strong> $</p>
+        <p><strong>recommendations:</strong> classic spicy malatang with wide glass noodles & beef slices  </p>
+        <p> <strong>desc:</strong> super yummy (soup has good depth) and you can customize to your liking because it's diy! my bowls are usually $12 and it's a lot of food. the rating is docked tho because there were maggots in the food before...</p>
+      </div>
+    </div>
+
+    <div class="fav-card" data-modal="modal6">
+      <img src="./assets/ten.png" alt="ten second rice noodle">
+      <div class="card-info">
+        <h2>ten second rice noodle</h2>
+      </div>
+    </div>
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/ten.png" alt="ten second rice noodle">
+        <h2>ten second rice noodle</h2>
+        <p><strong>ranking:</strong> 4.2/5</p>
+        <p><strong>price:</strong> $</p>
+        <p><strong>recommendations:</strong> hot pot sliced beef rice noodle & sour cabbage fish rice noodle </p>
+        <p> <strong>desc:</strong> most dishes are &lt $15 and the soup is yummy with depth and the noodles are always springy. lots of toppings in the soup and very filling. </p>
+      </div>
+    </div>
+
+    <div class="fav-card" data-modal="modal7">
+      <img src="./assets/spoonhouse.jpg" alt="Spoonhouse">
+      <div class="card-info">
+        <h2>spoon house</h2>
+      </div>
+    </div>
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/spoonhouse.jpg" alt="Spoonhouse">
+        <h2>spoon house</h2>
+        <p><strong>ranking:</strong> 4.5/5</p>
+        <p><strong>price:</strong> $$</p>
+        <p><strong>recommendations:</strong> army stew (budae jjigae)</p>
+        <p> <strong>desc:</strong> i always get the budae jjigae and its so yummy and simple. one of my top comfort foods on campus &lt 3</p>
+      </div>
+    </div>
+
+    <div class="fav-card" data-modal="modal8">
+      <img src="./assets/teamoji.avif" alt="Teamoji">
+      <div class="card-info">
+        <h2>teamoji</h2>
+      </div>
+    </div>
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/teamoji.avif" alt="Teamoji">
+        <h2>teamoji</h2>
+        <p><strong>ranking:</strong> 4.5/5</p>
+        <p><strong>price:</strong> $$$</p>
+        <p><strong>recommendations:</strong> mango coconut slushie with grapefruit & white peach lychee green tea </p>
+        <p> <strong>desc:</strong> relatively expensive, but the drinks are big & i think its the best tasting boba on campus! their drinks also have a lot of included toppings</p>
+      </div>
+    </div>
+
+    <div class="fav-card" data-modal="modal9">
+      <img src="./assets/mos.jpg" alt="Mo's Burritos">
+      <div class="card-info">
+        <h2>mo's burritos</h2>
+      </div>
+    </div>
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/mos.jpg" alt="Mo's Burritos">
+        <h2>mo's burritos</h2>
+        <p><strong>ranking:</strong> 4.5/5</p>
+        <p><strong>price:</strong> $$</p>
+        <p><strong>recommendations:</strong> nachos supremo (& i've heard the birria tacos are yum) </p>
+        <p> <strong>desc:</strong> the late night go-to food that actually tastes so good! best nachos i've ever had hehe. i miss it when i leave campus</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-left">
+        
+        <div class="contact-text">
+          <h1>contact</h1>
+          <p>let me know if you agree/disagree with my takes or if you have any new restaurant or dish recommendations!</p>
+          <p>i would love to hear!</p>
+          <p class="contact-email">naomil4@illinois.edu</p>
+          <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/naomi-lin-0a2b3a269/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/xupuomi" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://discordapp.com/users/sillygoos46" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        </div>
+        
+      </div>
+      <div class="contact-right">
+        <div class="contact-video-label">a brief glimpse into uiuc</div>
+        <video class="contact-video" autoplay muted loop>
+          <source src="./assets/green.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+    <footer>
+        <foot>© naomil4@illinois.edu</foot>
+        <div>
+        <a href="https://www.linkedin.com/in/naomi-lin-0a2b3a269/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/xupuomi"><i class="fa-brands fa-github"></i></a>
+        <a href="https://discordapp.com/users/sillygoos46"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    
     </body>
 </html>
+
+
